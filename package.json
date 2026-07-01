@@ -1,0 +1,24 @@
+{
+  "name": "reg-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for regulation RAG — search regulations from PDF documents",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "ingest": "node ingest.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@qdrant/qdrant-js": "^1.9.0",
+    "dotenv": "^17.0.0",
+    "express": "^4.21.0",
+    "mammoth": "^1.12.0",
+    "pdf-parse": "^1.1.1",
+    "xlsx": "^0.18.5",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

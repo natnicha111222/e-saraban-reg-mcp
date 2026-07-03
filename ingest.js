@@ -13,8 +13,8 @@ const { embed } = require("./embed");
 
 const QDRANT_URL  = process.env.QDRANT_URL  || "http://localhost:6333";
 const COLLECTION  = process.env.QDRANT_COLLECTION || "regulations";
-const CHUNK_SIZE  = 500;
-const CHUNK_OVERLAP = 50;
+const CHUNK_SIZE  = 200;
+const CHUNK_OVERLAP = 20;
 
 const qdrant = new QdrantClient({ url: QDRANT_URL });
 const SUPPORTED = [".pdf", ".docx", ".doc", ".xlsx", ".xls"];

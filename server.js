@@ -21,7 +21,7 @@ server.tool(
   "ค้นหาข้อมูลจากเอกสารที่อัปโหลดเข้าระบบ ต้องเรียกสำหรับทุกคำถามที่ต้องการข้อมูล ห้ามตอบโดยไม่เรียก tool นี้ก่อน",
   {
     query: z.any().describe("คำถามหรือหัวข้อที่ต้องการค้นหาในระเบียบ"),
-    topK: z.any().optional().describe("จำนวน chunks ที่ต้องการ (default: 3)"),
+    topK: z.any().optional().describe("จำนวน chunks ที่ต้องการ (default: 5)"),
     token: z.any().optional()  // รับ token ที่ inject มาจาก AiService แต่ไม่ใช้ (Qdrant ไม่ต้องการ auth)
   },
   async (rawArgs) => {
